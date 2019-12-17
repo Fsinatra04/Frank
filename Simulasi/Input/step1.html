@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/main.css">
+        <title>Laporan PT. Bromelaine Enzyme</title>
+    </head>
+    <body>
+        <!-- link pindah halaman-->
+        <a href="maininput1.html">Halaman Utama</a>
+        <h1>Database PO</h1>
+        <p>Halaman ini digunakan untuk input PO PT BE</p>
+
+        <!-- Form Input-->
+        <form action="inputphp/input1.php" method="POST">
+            <fieldset>
+            <legend>Input Data PO</legend>
+            <br>
+                ID PO:<br>
+                <input type="text" name="idpo" required><br>
+                Nama Buyer:<br>
+                <input type="text" name="namabuyer" required><br>
+
+                Satuan Enzyme<br>
+                <select name = "satuanenzyme" required>
+                    <option selected hidden value="">Pilih Satuan</option>
+                    <option value = "CDU">CDU</option>
+                    <option value = "GDU">GDU</option>
+                    <option value = "FIP">FIP</option>
+                </select><br>
+
+                Quantity:<br>
+                <input type="number" name="quantity" required><br>
+                Konversi:<br>
+                <input type="number" name="konversi" required><br>
+                Tanggal Export<br>
+                <input type="date" name="tanggalexport" required><br>
+                Tipe PO<br>
+                <select name = "tipepo" required>
+                    <option value = "REG">Regular</option>
+                    <option value = "SPC">Special</option>
+                </select><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+
+
+    </body>
+</html>
